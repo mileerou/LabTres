@@ -59,8 +59,8 @@ all: main-build
 main-build: MicroLab03.elf secondary-outputs
 
 # Tool invocations
-MicroLab03.elf MicroLab03.map: $(OBJS) $(USER_OBJS) C:\Users\crism\STM32CubeIDE\workspace_1.19.0\Micro1\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "MicroLab03.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\crism\STM32CubeIDE\workspace_1.19.0\Micro1\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MicroLab03.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+MicroLab03.elf MicroLab03.map: $(OBJS) $(USER_OBJS) C:\Users\Milena\Desktop\LabTres\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "MicroLab03.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Milena\Desktop\LabTres\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MicroLab03.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
