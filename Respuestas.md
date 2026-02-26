@@ -14,6 +14,9 @@ d. ¿Por qué es necesario configurar el registro GPIOA->MODER antes de escribir
 e. ¿Qué efecto físico tiene la instrucción GPIOA->ODR ^= LED_PIN sobre el hardware?
 
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 Preguntas Parte 2:
 a. ¿Qué instrucciones específicas del código cambian entre la versión que usa GPIOA->ODR y
 la versión que usa GPIOA->BSRR para encender y apagar el LED?
